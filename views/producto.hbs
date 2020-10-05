@@ -1,0 +1,37 @@
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+    id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="/">Estetica<span>Umala</span></a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="/" class="nav-link"><span>Volver a Inicio</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <section class="" style="margin-top:10em;">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-8">
+                <img src="/{{producto.imagen}}" style="width:80%; height:auto;">
+            </div>
+            <div class="col-4 mt-5">
+                <h2>{{producto.nombre}}</h2>
+                <p>{{producto.descripcion}}</p>
+                <h5>${{producto.precio}}</h5>
+                <h6 style="text-decoration: line-through;">$ {{precio_previo}}</h6>
+            </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+	
+		

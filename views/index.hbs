@@ -1,0 +1,184 @@
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+    id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand text-warning" href="/">Estetica<span>Umala</span></a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Inicio</span></a></li>
+          <li class="nav-item"><a href="#categories" class="nav-link"><span>Categorias</span></a></li>
+          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Productos</span></a></li>
+         <li class="nav-item"><a href="/contacto" class="nav-link"><span>Contacto</span></a></li>
+          <li class="nav-item"><a href="#testimonios" class="nav-link"><span>Testimonios</span></a></li>
+            <li class="nav-item"><a href="#ubicacion" class="nav-link"><span>Ubicación</span></a></li>
+            <li class="nav-item"><a href="/login" class="nav-link"><span>Login</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section id="home-section" class="hero ">
+	<h3 class="vr text-warning">Estetica Umala</h3>
+	<div class="home-slider js-fullheight owl-carousel">
+		<div class="slider-item js-fullheight">
+			<div class="overlay"></div>
+			<div class="container-fluid p-5">
+				<div class="p-5 row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
+					data-scrollax-parent="true">
+					<div class="one-third order-md-last img js-fullheight"
+						style="background-image:url(images/home.jpg);">
+						<div class="overlay"></div>
+					</div>
+					<div class="p-5 one-forth d-flex js-fullheight align-items-center ftco-animate"
+						data-scrollax=" properties: { translateY: '70%' }">
+						<div class="text">
+							<span class="subheading">Bienvenido a Estetica Umala </span>
+							<h1 class="mb-4 mt-3 text-warning">Los mejores servicios de belleza <span>para vos</span></h1>
+
+							<p><a href="/contacto" class="btn btn-primary px-5 py-3 mt-3">Contactanos</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item js-fullheight">
+			<div class="overlay"></div>
+			<div class="container-fluid p-5">
+				<div class=" p-5 row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
+					data-scrollax-parent="true">
+					<div class="one-third order-md-last img js-fullheight"
+						style="background-image:url(images/home2.jpg);">
+						<div class="overlay"></div>
+					</div>
+					<div class=" p-5 one-forth d-flex js-fullheight align-items-center ftco-animate"
+						data-scrollax=" properties: { translateY: '70%' }">
+						<div class="text">
+							<span class="subheading"></span>
+							<h1 class="mb-4 mt-3 text-warning">Resalta aún más tu <span>belleza</span></h1>
+							<p class= "text-primary">Nosotras hacemos relidad tu deseo.</p>
+
+							<p><a href="/contacto" class="btn btn-warning px-5 py-3 mt-3">Contactanos</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section-2 img" id="categories" style="background-image: url(images/ilustracion.jpg);">
+	<div class="container">
+		<div class="row d-md-flex justify-content-end">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						{{#each categorias}}
+						<a href="#projects-section" class="services-wrap ftco-animate">
+							<div class="icon d-flex justify-content-center align-items-center">
+								<span class="ion-ios-arrow-back"></span>
+								<span class="ion-ios-arrow-forward"></span>
+							</div>
+							<h2>{{nombre}}</h2>
+							<p>{{descripcion}}.</p>
+						</a>
+						{{/each}}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="ftco-section ftco-project" id="projects-section">
+	<div class="container px-md-5">
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+				<span class="subheading">Conozca</span>
+				<h4 class="mb-4">Nuestros productos</h4>
+			</div>
+		</div>
+		<div class="row" id="1">
+			<div class="col-md-12 testimonial">
+				<div class="carousel-project owl-carousel">
+					{{#each productos}}
+					<div class="item">
+						<div class="project">
+							<div class="img">
+								<img src="{{imagen}}" class="img-fluid" alt="Colorlib Template">
+								<div class="text px-4">
+									<h3><a href="/productos/single/{{id}}">{{nombre}}</a></h3>
+									<span>ARS $ {{precio}}</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="ftco-section" id="testimonios">
+	<div class="container">
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-6 heading-section text-center ftco-animate">
+				<span class="subheading">Testimonios</span>
+				<h2 class="mb-4">Clientes felices</h2>
+				<p>Un testimonio de nuestros mejores clientes</p>
+			</div>
+		</div>
+		<div class="row">
+			{{#each testimonios}}
+			<div class="col-md-6 col-lg-4 ftco-animate">
+				<div class="staff">
+
+					<div class="text d-flex align-items-center pt-3 text-center">
+						<div>
+							<h3 class="mb-2">{{nombre}}</h3>
+							<span class="position mb-4">"{{comentario}}"</span>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			{{/each}}
+
+		</div>
+
+		<div class="row justify-content-center pb-5">
+			<div class="col-md-6 heading-section text-center ftco-animate">
+		<p><a href="/testimonio" class="btn btn-warning mx-center py-3 mt-5">Dejá tu testimonio</a></p>
+				
+			</div>
+		</div>
+
+					
+	</div>
+</section>
+
+    <div class="container" id="ubicacion">
+		  <h2 class="text-center">Ubicación</h2>
+      <div class="row justify-content-center pb-5">>
+      
+        <div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26251.82543649731!2d-58.711460284586884!3d-34.6678790983247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1599617402164!5m2!1sen!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mx-auto"></iframe>
+        </div>
+        <dl class="p-5">
+          <dt>Calle Estetica 1234, <br>
+            CABA.</dt>
+          <dd><span>Telefono: </span>15-1234-5678</dd>
+          <dd><span>Mail: </span><a href="#" class="link">esteticaumala@gmail.com</a></dd>
+        </dl>
+      </div>
